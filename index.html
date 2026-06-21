@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Departamento en Venta — Edificio Revelación, Santiago Centro">
-    <meta property="og:description" content="3 dormitorios, 2 baños, 57 m². Estacionamiento y bodega. Metro Santa Isabel a 10 min.">
+    <meta property="og:description" content="3 dormitorios, 2 baños, 57 m². Estacionamiento y bodega. Piscina, gimnasio, quincho. Metro Santa Isabel a 10 min.">
     <meta property="og:image" content="https://casanovaaranis.github.io/depto-revelacion/foto_01_v2.png">
     <meta property="og:type" content="website">
     <title>🏠 Depto en Venta · Edificio Revelación · Argomedo 350</title>
@@ -15,7 +15,7 @@
         /* Hero */
         .hero { 
             background: linear-gradient(160deg, #2c3e50 0%, #1a252f 40%, #0d1b2a 100%); 
-            color: #f0e6d8; padding: 50px 24px 45px; text-align: center; position: relative; overflow: hidden; 
+            color: #f0e6d8; padding: 55px 24px 50px; text-align: center; position: relative; overflow: hidden; 
         }
         .hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(ellipse at 30% 20%, rgba(212,175,55,0.12) 0%, transparent 60%); }
         .hero > * { position: relative; z-index: 1; }
@@ -25,33 +25,44 @@
         .hero .price-uf { font-size: 2.4em; font-weight: 800; color: #d4af37; margin-bottom: 6px; }
         .hero .price-clp { font-size: 1.2em; opacity: 0.75; }
         
-        /* Stats bar */
+        /* Stats */
         .stats { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; padding: 24px 16px; background: #fff; border-bottom: 1px solid #e8e2da; }
         .stat { background: #faf8f5; padding: 14px 20px; border-radius: 12px; text-align: center; min-width: 90px; flex: 0 0 auto; }
         .stat .num { font-size: 1.5em; font-weight: 700; color: #2c3e50; }
         .stat .lbl { font-size: 0.78em; color: #8b7e6e; margin-top: 2px; }
         
+        /* Section titles */
+        .section { max-width: 860px; margin: 50px auto 0; padding: 0 20px; }
+        .section h2 { font-size: 1.45em; color: #2c3e50; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #d4af37; display: inline-block; }
+        
         /* Description */
-        .desc { max-width: 720px; margin: 32px auto 0; padding: 0 20px; }
-        .desc h2 { font-size: 1.5em; color: #2c3e50; margin-bottom: 12px; }
-        .desc p { color: #5a5348; margin-bottom: 12px; font-size: 1.02em; }
+        .desc p { color: #5a5348; margin-bottom: 12px; font-size: 1.02em; max-width: 720px; }
         
         /* Features */
-        .features-wrap { max-width: 780px; margin: 28px auto 0; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; }
+        .features-wrap { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 10px; max-width: 780px; margin-top: 20px; }
         .feat { background: #fff; padding: 16px 14px; border-radius: 10px; display: flex; align-items: center; gap: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); font-size: 0.92em; color: #3d372f; }
         .feat .emoji { font-size: 1.3em; flex-shrink: 0; }
         
-        /* Gallery */
-        .gallery { max-width: 1200px; margin: 40px auto 10px; padding: 0 20px; }
-        .gallery h2 { font-size: 1.5em; color: #2c3e50; margin-bottom: 18px; }
-        .photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
-        .photos a { display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.12); transition: transform 0.25s, box-shadow 0.25s; background: #e8e2da; }
-        .photos a:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
-        .photos img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        /* Common areas */
+        .common-areas { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-top: 20px; }
+        .area-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.07); border: 1px solid #e8e2da; }
+        .area-card img { width: 100%; height: 180px; object-fit: cover; }
+        .area-card .area-info { padding: 14px 16px; }
+        .area-card .area-info h3 { font-size: 1.05em; color: #2c3e50; margin-bottom: 4px; }
+        .area-card .area-info p { font-size: 0.85em; color: #8b7e6e; }
         
-        /* Contact card */
-        .contact-section { max-width: 600px; margin: 44px auto 50px; padding: 0 20px; }
-        .contact-card { background: #fff; border-radius: 16px; padding: 32px 28px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,0.08); border: 1px solid #e8e2da; }
+        /* Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 20px; }
+        .gallery-grid a { display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.12); transition: transform 0.25s, box-shadow 0.25s; background: #e8e2da; }
+        .gallery-grid a:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+        .gallery-grid img { width: 100%; height: 220px; object-fit: cover; display: block; }
+        
+        /* Map */
+        .map-container { margin-top: 20px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.1); border: 1px solid #e8e2da; }
+        .map-container iframe { width: 100%; height: 380px; border: none; display: block; }
+        
+        /* Contact */
+        .contact-card { background: #fff; border-radius: 16px; padding: 32px 28px; text-align: center; box-shadow: 0 2px 16px rgba(0,0,0,0.08); border: 1px solid #e8e2da; max-width: 600px; margin: 0 auto; }
         .contact-card h3 { font-size: 1.35em; color: #2c3e50; margin-bottom: 6px; }
         .contact-card .subtitle { color: #8b7e6e; font-size: 0.92em; margin-bottom: 22px; }
         .contact-methods { display: flex; flex-direction: column; gap: 12px; align-items: center; }
@@ -65,10 +76,9 @@
         .btn-call { background: #faf8f5; color: #2c3e50; border: 2px solid #d4af37; }
         .contact-btn .icon { font-size: 1.3em; }
         .phone-number { font-size: 1.25em; font-weight: 700; letter-spacing: 0.3px; color: #2c3e50; }
-        .contact-note { margin-top: 18px; font-size: 0.82em; color: #8b7e6e; font-style: italic; }
         
         /* Footer */
-        .footer { text-align: center; padding: 28px 20px 40px; color: #8b7e6e; font-size: 0.85em; border-top: 1px solid #e8e2da; max-width: 600px; margin: 0 auto; }
+        .footer { text-align: center; padding: 40px 20px 50px; color: #8b7e6e; font-size: 0.85em; border-top: 1px solid #e8e2da; max-width: 600px; margin: 40px auto 0; }
         .footer span { margin: 0 8px; opacity: 0.4; }
         
         /* Lightbox */
@@ -77,13 +87,13 @@
         .lightbox img { max-width: 95vw; max-height: 90vh; border-radius: 6px; }
         .lightbox .close { position: fixed; top: 20px; right: 28px; color: #fff; font-size: 2em; cursor: pointer; z-index: 1000; }
         .lightbox .prev, .lightbox .next { position: fixed; top: 50%; transform: translateY(-50%); color: #fff; font-size: 2.2em; cursor: pointer; z-index: 1000; padding: 10px; user-select: none; }
-        .lightbox .prev { left: 20px; }
-        .lightbox .next { right: 20px; }
+        .lightbox .prev { left: 20px; } .lightbox .next { right: 20px; }
         .lightbox .counter { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); color: #fff; font-size: 0.9em; opacity: 0.7; z-index: 1000; }
     </style>
 </head>
 <body>
 
+<!-- HERO -->
 <div class="hero">
     <div class="badge">🏠 VENTA DIRECTA · DUEÑA</div>
     <h1>Departamento en Edificio Revelación</h1>
@@ -92,6 +102,7 @@
     <p class="price-clp">≈ $140.420.000 pesos chilenos</p>
 </div>
 
+<!-- STATS -->
 <div class="stats">
     <div class="stat"><div class="num">3</div><div class="lbl">Dormitorios</div></div>
     <div class="stat"><div class="num">2</div><div class="lbl">Baños</div></div>
@@ -102,32 +113,85 @@
     <div class="stat"><div class="num">2022</div><div class="lbl">Año</div></div>
 </div>
 
-<div class="desc">
+<!-- LA PROPIEDAD -->
+<div class="section">
     <h2>✨ La propiedad</h2>
-    <p>Departamento de 3 dormitorios y 2 baños en primer piso del <strong>Edificio Revelación</strong>, uno de los proyectos más sólidos del barrio Argomedo. Entrega 2022, prácticamente nuevo, con terminaciones de calidad y excelente iluminación natural.</p>
-    <p>Cuenta con <strong>estacionamiento cubierto</strong> (subterráneo nivel -2), <strong>bodega</strong>, lavadero en la unidad y comunidad <em>pet-friendly</em>. Gastos comunes razonables de $170.000 que incluyen agua caliente central.</p>
-    <p><strong>Ubicación inmejorable:</strong> a 10 minutos caminando del Metro Santa Isabel (L5) y 12 del Metro Irarrázaval (L3+L5). Parque Bustamante a 5 cuadras. Supermercados, colegios, cafeterías y comercio a pasos.</p>
-    <p>📋 <strong>Recepción Definitiva N°48</strong> — todo en regla, listo para escriturar. Se vende por cambio de ciudad.</p>
+    <div class="desc">
+        <p>Departamento de 3 dormitorios y 2 baños en primer piso del <strong>Edificio Revelación</strong>, uno de los proyectos más sólidos del barrio Argomedo. Entrega 2022, prácticamente nuevo, con terminaciones de calidad y excelente iluminación natural.</p>
+        <p>Cuenta con <strong>estacionamiento cubierto</strong> (subterráneo nivel -2), <strong>bodega</strong>, lavadero en la unidad y comunidad <em>pet-friendly</em>. Gastos comunes de $170.000 que incluyen agua caliente central.</p>
+        <p>📋 <strong>Recepción Definitiva N°48</strong> — todo en regla, listo para escriturar. Se vende por cambio de ciudad.</p>
+    </div>
+    <div class="features-wrap" style="margin-top:20px">
+        <div class="feat"><span class="emoji">🚗</span> Estacionamiento cubierto</div>
+        <div class="feat"><span class="emoji">📦</span> Bodega incluida</div>
+        <div class="feat"><span class="emoji">🐶</span> Pet-friendly</div>
+        <div class="feat"><span class="emoji">🧺</span> Lavadero en unidad</div>
+        <div class="feat"><span class="emoji">🚇</span> Metro Santa Isabel 10 min</div>
+        <div class="feat"><span class="emoji">🏙️</span> Metro Irarrázaval 12 min</div>
+        <div class="feat"><span class="emoji">🌳</span> Parque Bustamante 5 cdras</div>
+        <div class="feat"><span class="emoji">✅</span> Recepción Definitiva N°48</div>
+        <div class="feat"><span class="emoji">💧</span> Agua caliente central</div>
+        <div class="feat"><span class="emoji">🏢</span> Conserjería 24/7</div>
+        <div class="feat"><span class="emoji">🔒</span> Acceso controlado</div>
+        <div class="feat"><span class="emoji">📐</span> Terminaciones calidad</div>
+    </div>
 </div>
 
-<div class="features-wrap">
-    <div class="feat"><span class="emoji">🚗</span> Estacionamiento cubierto</div>
-    <div class="feat"><span class="emoji">📦</span> Bodega incluida</div>
-    <div class="feat"><span class="emoji">🐶</span> Pet-friendly</div>
-    <div class="feat"><span class="emoji">🧺</span> Lavadero en unidad</div>
-    <div class="feat"><span class="emoji">🚇</span> Metro Santa Isabel 10 min</div>
-    <div class="feat"><span class="emoji">🏙️</span> Metro Irarrázaval 12 min</div>
-    <div class="feat"><span class="emoji">🌳</span> Parque Bustamante 5 cdras</div>
-    <div class="feat"><span class="emoji">✅</span> Recepción Definitiva N°48</div>
-    <div class="feat"><span class="emoji">💧</span> Agua caliente central</div>
-    <div class="feat"><span class="emoji">🏢</span">Conserjería 24/7</div>
-    <div class="feat"><span class="emoji">🔒</span> Acceso controlado</div>
-    <div class="feat"><span class="emoji">📐</span> Terminaciones calidad</div>
+<!-- ÁREAS COMUNES DEL EDIFICIO -->
+<div class="section">
+    <h2>🏊 Áreas comunes del edificio</h2>
+    <p style="color:#5a5348;margin-bottom:14px">El Edificio Revelación ofrece espacios pensados para disfrutar sin salir de casa:</p>
+    <div class="common-areas">
+        <div class="area-card">
+            <div style="background:linear-gradient(135deg,#1a5276,#2980b9);height:180px;display:flex;align-items:center;justify-content:center;font-size:3em;">🏊‍♀️</div>
+            <div class="area-info">
+                <h3>Piscina</h3>
+                <p>Piscina exterior + piscina temperada. Ideal para el verano y el invierno.</p>
+            </div>
+        </div>
+        <div class="area-card">
+            <div style="background:linear-gradient(135deg,#1e8449,#27ae60);height:180px;display:flex;align-items:center;justify-content:center;font-size:3em;">🏋️</div>
+            <div class="area-info">
+                <h3>Gimnasio equipado</h3>
+                <p>Máquinas cardiovasculares y de fuerza. Abierto todos los días.</p>
+            </div>
+        </div>
+        <div class="area-card">
+            <div style="background:linear-gradient(135deg,#6c3483,#a569bd);height:180px;display:flex;align-items:center;justify-content:center;font-size:3em;">🍖</div>
+            <div class="area-info">
+                <h3>Quinchos</h3>
+                <p>Quinchos en azotea con parrilla. Perfecto para asados con amigos.</p>
+            </div>
+        </div>
+        <div class="area-card">
+            <img src="salon_eventos.jpg" alt="Salón de Eventos" loading="lazy">
+            <div class="area-info">
+                <h3>Salón de Eventos</h3>
+                <p>Espacio gourmet con cocina equipada para celebraciones y reuniones.</p>
+            </div>
+        </div>
+        <div class="area-card">
+            <div style="background:linear-gradient(135deg,#b9770e,#f39c12);height:180px;display:flex;align-items:center;justify-content:center;font-size:3em;">👶</div>
+            <div class="area-info">
+                <h3>Juegos infantiles</h3>
+                <p>Zona segura para que los niños jueguen dentro del condominio.</p>
+            </div>
+        </div>
+        <div class="area-card">
+            <div style="background:linear-gradient(135deg,#2c3e50,#5d6d7e);height:180px;display:flex;align-items:center;justify-content:center;font-size:3em;">💼</div>
+            <div class="area-info">
+                <h3>Coworking</h3>
+                <p>Sala de trabajo compartido con buena conexión. Ideal para home office.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="gallery">
-    <h2>📸 Fotos</h2>
-    <div class="photos" id="gallery">
+<!-- FOTOS DEL DEPARTAMENTO -->
+<div class="section">
+    <h2>📸 Fotos del departamento</h2>
+    <p style="color:#5a5348;margin-bottom:10px">19 fotos reales. Hacé click en cualquiera para verla en grande.</p>
+    <div class="gallery-grid" id="gallery">
         <a href="#" data-idx="0"><img src="foto_01_v2.png" alt="Living comedor" loading="lazy"></a>
         <a href="#" data-idx="1"><img src="foto_02_v2.png" alt="Cocina" loading="lazy"></a>
         <a href="#" data-idx="2"><img src="foto_03_v2.png" alt="Dormitorio principal" loading="lazy"></a>
@@ -150,10 +214,23 @@
     </div>
 </div>
 
-<div class="contact-section">
+<!-- UBICACIÓN -->
+<div class="section">
+    <h2>📍 Ubicación</h2>
+    <p style="color:#5a5348;margin-bottom:10px">
+        <strong>Argomedo 350, Santiago Centro</strong> — a pasos del Metro Santa Isabel (L5) y del Metro Irarrázaval (L3+L5). 
+        Parque Bustamante, supermercados, cafeterías y comercio a minutos caminando.
+    </p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.436477551036!2d-70.625!3d-33.448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c57f0e0e0e0b%3A0x0!2sArgomedo+350%2C+Santiago!5e0!3m2!1ses!2scl!4v1000000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<div class="section">
+    <h2>📞 ¿Te interesa? Hablemos</h2>
+    <p style="color:#5a5348;margin-bottom:18px;text-align:center">Coordinemos una visita sin compromiso, el día y hora que mejor te acomode.</p>
     <div class="contact-card">
-        <h3>📞 ¿Te interesa? Hablemos</h3>
-        <p class="subtitle">Coordinemos una visita sin compromiso</p>
         <div class="contact-methods">
             <a class="contact-btn btn-whatsapp" href="https://wa.me/56975791916" target="_blank" rel="noopener">
                 <span class="icon">💬</span> WhatsApp
@@ -165,16 +242,15 @@
                 <span class="icon">📱</span> <span class="phone-number">+56 9 7579 1916</span>
             </a>
         </div>
-        <p class="contact-note">Atendemos consultas todos los días de 10:00 a 21:00 hrs</p>
     </div>
 </div>
 
 <div class="footer">
     <p>📍 Argomedo 350, Santiago Centro — Edificio Revelación</p>
-    <p>Venta directa dueña <span>·</span> Sin comisión de corredora</p>
+    <p>Venta directa dueña <span>·</span> Sin comisión de corredora <span>·</span> Contacto disponible todo el día</p>
 </div>
 
-<!-- Lightbox -->
+<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
     <span class="close">&times;</span>
     <span class="prev">&lsaquo;</span>
